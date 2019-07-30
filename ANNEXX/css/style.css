@@ -1,0 +1,351 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --main-green: #3ECCB5;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.active{
+    color: var(--main-green) !important;
+}
+
+/* header started */
+
+/*animation for interacting with js*/
+.show {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.mynav{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color:#212121;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1 !important;
+}
+.mynav li{
+    line-height: 20px; /*vertikal simmetriya*/
+    float:right;
+    padding: 20px 16px; 
+}
+.mynav a{
+    color:white;
+    text-decoration: none;
+}
+.mynav a:hover{
+    color: var(--main-green);
+    transition: .5s ease;
+}
+.brand{
+    float:left !important; /* mecburi property tetbiq etme*/
+    font-size: 2em; 
+    font-family: 'Roboto Slab', serif;
+}
+.brand span{
+    color: var(--main-green);
+}
+/* header ended */
+
+/* welcome section started */
+.welcome-section{
+    background-image: url("../images/bg1.jpg");
+    height: 1000px;
+    text-align: center;
+}
+.welcome-section-p{
+    padding-top: 33%;
+}
+.welcome-section-p1{
+    font-family: 'Roboto Slab', serif;
+    display: inline;
+    color:white;
+    font-size: 120px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.welcome-section-p2{
+    display: inline;
+    color:white;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.welcome-section button{
+    background-color: var(--main-green);
+    padding: 15px 55px;
+    color: white;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    font-size: 15px;
+}
+
+.welcome-section button:hover{
+    background-color: #379180;
+    transition: .5s ease;
+    cursor: pointer;
+}
+/* welcome section ended */
+
+/* about us section started */
+.about-us-section{
+    background-image: url("../images/bg2.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+.letter-section{
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+.letter-section-texts{
+    width: 70%;
+    margin:0 auto;
+    line-height: 25px;
+    font-size: .9em;
+    padding-bottom: 60px;
+}
+.letter-section-texts h1{
+    padding-top: 60px;
+    font-size: 3em !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* about us section ended */
+
+/* community section started */
+.community-section header{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.community-section h1{
+    font-size: 3em !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carousel{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.carousel img{
+    width: 33%;
+    margin: 0 auto;
+    padding: 0;
+    height: 280px;
+    cursor: pointer;
+}
+/* community section ended */
+
+/* spaces-section started */
+.spaces-section{
+    background-color: var(--main-green);
+}
+.spaces-section header{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+}
+.spaces-section h1{
+    font-size: 3em !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* spaces-section ended */
+
+/* pictures with overlay started */
+.layout-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-pic, .second-pic, .third-pic, .fourth-pic{
+    /* flex: 0 50%; */
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.layout-section img{
+    width: 100%;
+    height: 350px;
+}
+.layout{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.first-pic:hover .layout{
+    opacity: 1;
+    transition: .5s ease;
+}
+.second-pic:hover .layout{
+    opacity: 1;
+    transition: .5s ease;
+}
+.third-pic:hover .layout{
+    opacity: 1;
+    transition: .5s ease;
+}
+.fourth-pic:hover .layout{
+    opacity: 1;
+    transition: .5s ease;
+}
+.first-pic:hover img{
+    filter: blur(4px);
+    transition: .5s ease;
+}
+.second-pic:hover img{
+    filter: blur(4px);
+    transition: .5s ease;
+}
+.third-pic:hover img{
+    filter: blur(4px);
+    transition: .5s ease;
+}
+.fourth-pic:hover img{
+    filter: blur(4px);
+    transition: .5s ease;
+}
+.layout p{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 80px;
+}
+.layout footer{
+    font-size: 1.3em;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 130px;
+}
+.layout footer .share{
+    float: right;
+}
+.layout footer .like:hover{
+    color:lightgray;
+}
+.layout footer .share:hover{
+    color:lightgray;
+}
+/* pictures with overlay ended */
+
+/* membership content started */
+.membership-section{
+    margin-bottom: 270px;
+}
+.membership-section header{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.membership-section h1{
+    font-size: 3em !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+.membership-section h1{
+    padding-top: 80px;
+}
+.membership-content {
+    margin: 0 auto;
+    width: 70%;
+    margin-right: 100px;
+}
+.membership-content div{ 
+    display: table;
+    float: left;
+}
+.membership-content i{ 
+    font-size: 40px;
+} 
+.membership-content span{ 
+    vertical-align: middle; 
+    display: table-cell; 
+    font-weight: lighter;
+    font-size: .8em;
+} 
+.first-row div, .second-row div{
+    padding: 30px 20px;
+}
+.second-row{
+    padding-bottom: 80px;
+}
+/* membership content ended */
+
+/* contact section started */
+.contact-section{
+    background-image: url("../images/office.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 450px;
+    position: relative;
+}
+.contact-layout{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-content{
+    color:white;
+    text-align: center;
+}
+.contact-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em !important;
+    margin-top: 80px;
+}
+.contact-content form{
+    margin-top: 20px;
+}
+.contact-content input{
+    padding: 10px 110px;
+    background-color: white;
+    opacity: .3;
+    outline-color: transparent;
+    font-size: 15px;
+}
+.contact-content input::placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+.contact-content button{
+    margin-top: 5px;
+    padding: 10px 150px;
+    background-color: var(--main-green);
+    border-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+/* contact section ended */
+
+/* footer started */
+.my-footer{
+    background-color:#333333;
+    padding: 30px 80px;
+    color:#BAB8B8;
+    font-size: .9em;
+}
+/* footer ended */
